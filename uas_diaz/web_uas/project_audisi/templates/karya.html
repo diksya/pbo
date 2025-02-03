@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Karya Peserta - Kompetisi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .card p {
+            margin: 10px 0;
+        }
+        .card .btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .card .btn:hover {
+            background-color: #ff6347;
+        }
+        .file-link {
+            color: #ff7f50;
+        }
+        .rating {
+            margin-top: 10px;
+        }
+        .rating label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Galeri Karya Peserta Kompetisi</h2>
+
+        <!-- Card for a single participant's entry -->
+        <div class="card">
+            <h3>Nama Peserta: justin bieber</h3>
+            <p><strong>Email:</strong> confiden@email.com</p>
+            <p><strong>Kompetisi:</strong> Lomba Desain</p>
+            <p><strong>Deskripsi Karya:</strong> Karya ini mengangkat tema keberlanjutan dengan pendekatan desain modern. Menggunakan warna-warna minimalis untuk memberikan kesan bersih dan efisien.</p>
+            
+            <p><strong>File Karya:</strong> <a href="uploads/johndoe_lombadesain.jpg" class="file-link" target="_blank">Lihat Karya</a></p>
+            
+            <div class="rating">
+                <strong>Penilaian:</strong><br>
+                <label>1</label><input type="radio" name="rating_johndoe" value="1">
+                <label>2</label><input type="radio" name="rating_johndoe" value="2">
+                <label>3</label><input type="radio" name="rating_johndoe" value="3">
+                <label>4</label><input type="radio" name="rating_johndoe" value="4">
+                <label>5</label><input type="radio" name="rating_johndoe" value="5">
+                <button class="btn" type="submit">Simpan Penilaian</button>
+            </div>
+        </div>
+
+        <!-- Repeat for other participants -->
+        <div class="card">
+            <h3>Nama Peserta: sza</h3>
+            <p><strong>Email:</strong> gooddayh@email.com</p>
+            <p><strong>Kompetisi:</strong> Lomba Esai</p>
+            <p><strong>Deskripsi Karya:</strong> Esai ini membahas tentang pentingnya inovasi teknologi dalam mendukung pendidikan di era digital.</p>
+            
+            <p><strong>File Karya:</strong> <a href="uploads/janesmith_lombaesai.pdf" class="file-link" target="_blank">Lihat Karya</a></p>
+
+            <div class="rating">
+                <strong>Penilaian:</strong><br>
+                <label>1</label><input type="radio" name="rating_janesmith" value="1">
+                <label>2</label><input type="radio" name="rating_janesmith" value="2">
+                <label>3</label><input type="radio" name="rating_janesmith" value="3">
+                <label>4</label><input type="radio" name="rating_janesmith" value="4">
+                <label>5</label><input type="radio" name="rating_janesmith" value="5">
+                <button class="btn" type="submit">Simpan Penilaian</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

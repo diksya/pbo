@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Kompetisi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pendaftaran Kompetisi</h2>
+        <form action="/submit_pendaftaran/" method="POST" enctype="multipart/form-data">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="kompetisi">Pilih Kompetisi:</label>
+            <select id="kompetisi" name="kompetisi" required>
+                <option value="">-- Pilih Kompetisi --</option>
+                <option value="lomba1">Lomba Desain</option>
+                <option value="lomba2">Lomba Coding</option>
+                <option value="lomba3">Lomba Esai</option>
+            </select>
+
+            <label for="file">Unggah Karya:</label>
+            <input type="file" id="file" name="file" required>
+
+            <label for="deskripsi">Deskripsi Karya:</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+            
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>

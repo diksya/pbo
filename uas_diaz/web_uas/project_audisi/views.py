@@ -8,3 +8,12 @@ def home(request):
 def index(request):
     competitions = Kompetisi.objects.all()  # Fetch all competitions
     return render(request, 'index.html', {'competitions': competitions})  # Pass context to the template
+
+def daftar(request):
+    return render(request, 'daftar.html')
+
+def daftar(request):
+    return render(request, 'karya.html')
+
+def kompetisi(request):
+    return render(request, 'kompetisi.html')

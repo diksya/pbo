@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin Kompetisi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2575fc;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #ff6347;
+        }
+        .action-btn {
+            display: flex;
+            gap: 10px;
+        }
+        .status {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .approved {
+            background-color: #4caf50;
+        }
+        .pending {
+            background-color: #ff9800;
+        }
+        .rejected {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard Admin Kompetisi</h2>
+        <p>Daftar Peserta Kompetisi</p>
+
+        <!-- Tabel Daftar Peserta -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Peserta</th>
+                    <th>Email</th>
+                    <th>Kompetisi</th>
+                    <th>Deskripsi</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Peserta 1 -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>johndoe@email.com</td>
+                    <td>Lomba Desain</td>
+                    <td>Karya ini mengangkat tema keberlanjutan dengan pendekatan desain modern.</td>
+                    <td><span class="status approved">Disetujui</span></td>
+                    <td class="action-btn">
+                        <a href="lihat_karya.html" class="btn">Lihat Karya</a>
+                        <a href="edit_status.html" class="btn">Edit Status</a>
+                    </td>
+                </tr>
+                
+                <!-- Peserta 2 -->
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>janesmith@email.com</td>
+                    <td>Lomba Esai</td>
+                    <td>Esai ini membahas tentang pentingnya inovasi teknologi dalam pendidikan.</td>
+                    <td><span class="status pending">Menunggu</span></td>
+                    <td class="action-btn">
+                        <a href="lihat_karya.html" class="btn">Lihat Karya</a>
+                        <a href="edit_status.html" class="btn">Edit Status</a>
+                    </td>
+                </tr>
+
+                <!-- Peserta 3 -->
+                <tr>
+                    <td>Michael Tan</td>
+                    <td>michaeltan@email.com</td>
+                    <td>Lomba Coding</td>
+                    <td>Program ini menggunakan algoritma optimasi untuk menyelesaikan masalah kompleks.</td>
+                    <td><span class="status rejected">Ditolak</span></td>
+                    <td class="action-btn">
+                        <a href="lihat_karya.html" class="btn">Lihat Karya</a>
+                        <a href="edit_status.html" class="btn">Edit Status</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
